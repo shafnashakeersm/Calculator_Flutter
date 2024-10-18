@@ -1,4 +1,5 @@
 import 'package:calculator_flutter/pages/Addition.dart';
+import 'package:calculator_flutter/pages/Division.dart';
 import 'package:flutter/material.dart';
 
 
@@ -75,6 +76,7 @@ class Home_page extends StatelessWidget {
                   ),
                   onPressed: (){
 
+    Navigator.push(context, MaterialPageRoute(builder: (context) =>Division()));
                   }, child: Text("Division",
                 style: TextStyle(
                   color: Colors.white,
