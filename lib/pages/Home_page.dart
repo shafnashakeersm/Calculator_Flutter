@@ -1,6 +1,7 @@
 import 'package:calculator_flutter/pages/Addition.dart';
 import 'package:calculator_flutter/pages/Division.dart';
 import 'package:calculator_flutter/pages/Multiplication.dart';
+import 'package:calculator_flutter/pages/Subtraction.dart';
 import 'package:flutter/material.dart';
 
 
@@ -42,7 +43,8 @@ class Home_page extends StatelessWidget {
                     backgroundColor: Colors.purpleAccent,
                   ),
                   onPressed: (){
-
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Subtraction() ));
                   }, child: Text("Subtraction",
                 style: TextStyle(
                   color: Colors.white,
