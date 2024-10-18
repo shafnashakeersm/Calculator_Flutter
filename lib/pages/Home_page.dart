@@ -1,3 +1,4 @@
+import 'package:calculator_flutter/pages/Addition.dart';
 import 'package:flutter/material.dart';
 
 
@@ -20,6 +21,8 @@ class Home_page extends StatelessWidget {
                     backgroundColor: Colors.purpleAccent,
                   ),
                   onPressed: (){
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) =>Addition()));
 
                   }, child: Text("Addition",
                 style: TextStyle(
